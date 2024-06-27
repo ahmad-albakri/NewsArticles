@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="JWT" Version="11.0.0-beta2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="6.0.0-preview.4.21253.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-preview.5.24306.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0-preview.5.24306.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0-preview.5.24306.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NewsArticleApplication\NewsArticleApplication.csproj" />
+    <ProjectReference Include="..\NewsArticlesDomain\NewsArticlesDomain.csproj" />
+  </ItemGroup>
+
+</Project>
